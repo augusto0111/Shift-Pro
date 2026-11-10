@@ -29,7 +29,7 @@ const audienceContent = {
   },
   fleet: {
     title: "Mantenimiento alineado a tu operación.",
-    description: "Cada flota trabaja distinto. Consideramos tipo de unidad, recorrido y exigencia para conversar una propuesta adecuada a tu operación.",
+    description: "Conversamos sobre tus unidades, recorridos y exigencias de uso para entender la operación y evaluar sus necesidades de mantenimiento.",
     link: "Conversemos sobre tu flota",
     href: "#flotas",
   },
