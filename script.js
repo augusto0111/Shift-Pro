@@ -72,3 +72,50 @@ document.querySelectorAll(".service-trigger").forEach((trigger) => {
     detail.hidden = isExpanded;
   });
 });
+
+const counters = document.querySelectorAll("[data-counter]");
+const formatCounter = new Intl.NumberFormat("es-AR");
+const setCounterValue = (counter, value) => {
+  counter.textContent = formatCounter.format(value);
+};
+
+if (counters.length) {
+  const showFinalValues = () => {
+    counters.forEach((counter) => {
+      setCounterValue(counter, Number(counter.dataset.target));
+    });
+  };
+
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
+    showFinalValues();
+  } else {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        const counter = entry.target;
+        const target = Number(counter.dataset.target);
+        const start = performance.now();
+        const duration = 1400;
+        const animate = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const easedProgress = 1 - (1 - progress) ** 4;
+          setCounterValue(counter, Math.round(target * easedProgress));
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          }
+        };
+
+        requestAnimationFrame(animate);
+        observer.unobserve(counter);
+      });
+    }, { threshold: 0.6 });
+
+    counters.forEach((counter) => {
+      counter.textContent = "0";
+      observer.observe(counter);
+    });
+  }
+}

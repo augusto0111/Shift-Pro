@@ -18,6 +18,17 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+        <path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.8a8.5 8.5 0 1 1 16.1-4Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+        <path d="M8.2 7.8c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4-.1.6l-.5.7c-.2.2-.2.4 0 .6.4.7 1 1.3 1.7 1.7.2.1.4.2.6 0l.8-.9c.2-.2.4-.2.6-.1l1.6.8c.3.1.4.3.4.5 0 .3-.2 1.2-.7 1.6-.5.5-1.2.7-1.8.6-.6-.1-1.3-.3-2.2-.7-1.5-.7-2.7-1.9-3.5-3.3-.4-.8-.7-1.6-.7-2.2 0-.6.3-1.2.7-1.5Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="icon-instagram" viewBox="0 0 24 24">
+        <rect x="3.25" y="3.25" width="17.5" height="17.5" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+        <circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.7"/>
+        <circle cx="17.7" cy="6.6" r="1.1" fill="currentColor"/>
+      </symbol>
+    </svg>
     <header class="site-header">
       <a class="brand" href="#inicio" aria-label="Shift Pro, inicio">
         <img class="brand-logo" src="shiftpro-logo.svg" alt="Shift Pro">
@@ -27,11 +38,11 @@
         <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
       </button>
       <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#transmisiones">Transmisiones</a>
         <a href="#servicios">Servicios</a>
-        <a href="#productos">Liqui Moly</a>
         <a href="#particulares">Particulares</a>
         <a href="#flotas">Flotas</a>
-        <a class="nav-cta" href="https://wa.me/message/TBT3S5XPPHOJK1" target="_blank" rel="noreferrer">Hablemos <span aria-hidden="true">↗</span></a>
+        <a class="nav-cta" href="https://wa.me/message/TBT3S5XPPHOJK1" target="_blank" rel="noreferrer"><svg class="social-icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>Hablemos</a>
       </nav>
     </header>
 
@@ -42,30 +53,73 @@
         </div>
         <div class="hero-shade"></div>
         <div class="hero-content">
-          <p class="eyebrow"><span class="eyebrow-line"></span> SHIFT PRO · SERVICIO ESPECIALIZADO · SALTA</p>
-          <h1>Mantenimiento<br>con criterio.<br><em>En cada sistema.</em></h1>
-          <p class="hero-copy">Mantenimiento premium para tu vehículo, con la experiencia en transmisiones automáticas y diagnóstico electrónico que nos distingue.</p>
+          <p class="eyebrow"><span class="eyebrow-line"></span> SHIFT PRO · SALTA</p>
+          <h1>Mantenimiento<br>con criterio.</h1>
+          <p class="hero-specialty">Especialistas en cajas automáticas</p>
+          <p class="hero-copy">Nacimos del cuidado y la reparación de cajas automáticas. El resto del mantenimiento acompaña esa especialidad.</p>
           <div class="hero-actions">
-            <a class="button button-light" href="#particulares">Tengo un vehículo <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="#flotas">Gestiono una flota <span aria-hidden="true">→</span></a>
+            <a class="button button-light" href="#particulares">Tengo un vehículo</a>
+            <a class="text-link" href="#flotas">Gestiono una flota</a>
           </div>
           <ul class="hero-highlights" aria-label="Especialidades Shift Pro">
-            <li>Especialistas en transmisiones automáticas</li>
-            <li>Experiencia en Volkswagen</li>
-            <li>Atención para flotas</li>
+            <li>Cuidado y reparación de cajas automáticas</li>
+            <li>Diagnóstico electrónico</li>
+            <li>Mantenimiento integral complementario</li>
           </ul>
         </div>
         <div class="hero-index"><span>01</span> / 03</div>
       </section>
 
+      <section class="education-section section-pad" id="transmisiones">
+        <div class="education-visual">
+          <img
+            src="transmission-cutaway.png"
+            alt="Vista interna de una transmisión automática y sus componentes"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+        <div class="education-content">
+          <div class="section-kicker"><span>01</span><span class="kicker-rule"></span><span>Dentro de una caja automática</span></div>
+          <p class="overline">NO TODAS FUNCIONAN IGUAL</p>
+          <h2>Cada transmisión<br>tiene su propia <em>lógica.</em></h2>
+          <p>El fluido no solo lubrica: según el diseño, también transmite presión y ayuda a disipar calor y mantener la fricción prevista. AT, CVT y doble embrague funcionan de manera distinta; conocer qué caja equipa el vehículo es el primer paso para cuidarla con el fluido y el procedimiento adecuados.</p>
+          <p class="education-sources">Base técnica: <a href="https://www.aisin.com/en/product/mobility/ats-cvts-mts/" target="_blank" rel="noreferrer">AISIN</a> · <a href="https://www.jatco.co.jp/release/2016/20160425_633.html" target="_blank" rel="noreferrer">JATCO</a> · <a href="https://digital-assets.tecalliance.services/pdf/0c6ea1e613401588ef7071933dce5a63ca6f6eb3.pdf" target="_blank" rel="noreferrer">Schaeffler</a></p>
+          <a class="underlined-link" href="#intervalos">Conoce las referencias de service</a>
+        </div>
+      </section>
+
+      <section class="interval-section section-pad" id="intervalos">
+        <div class="section-kicker"><span>02</span><span class="kicker-rule"></span><span>Referencias de mantenimiento</span></div>
+        <div class="interval-heading">
+          <h2>El kilometraje orienta.<br><em>El modelo define.</em></h2>
+          <p>Rangos orientativos de Shift Pro para evaluar cuándo revisar cada transmisión.</p>
+        </div>
+        <div class="interval-grid" aria-label="Intervalos de referencia para mantenimiento de transmisiones">
+          <article class="interval-card" aria-label="Automática convencional: referencia aproximada 80 mil kilómetros">
+            <p class="interval-type">AT · CONVERTIDOR DE PAR</p>
+            <p class="interval-number"><span data-counter data-target="80000" aria-hidden="true">80.000</span><span aria-hidden="true"> km</span></p>
+          </article>
+          <article class="interval-card" aria-label="Doble embrague: referencia aproximada 60 mil kilómetros">
+            <p class="interval-type">DCT · DOBLE EMBRAGUE*</p>
+            <p class="interval-number"><span data-counter data-target="60000" aria-hidden="true">60.000</span><span aria-hidden="true"> km</span></p>
+          </article>
+          <article class="interval-card" aria-label="CVT: referencia aproximada 60 mil kilómetros">
+            <p class="interval-type">CVT · VARIADOR CONTINUO*</p>
+            <p class="interval-number"><span data-counter data-target="60000" aria-hidden="true">60.000</span><span aria-hidden="true"> km</span></p>
+          </article>
+        </div>
+        <p class="interval-note">Cada transmisión y cada vehículo tienen necesidades particulares. El intervalo depende del modelo, el tipo de caja y las condiciones de uso; por eso verificamos la recomendación del fabricante y el fluido adecuado antes de sugerir un service.</p>
+      </section>
+
       <section class="intro section-pad" id="enfoque">
-        <div class="section-kicker"><span>01</span><span class="kicker-rule"></span><span>Una forma distinta de cuidar</span></div>
+        <div class="section-kicker"><span>03</span><span class="kicker-rule"></span><span>Qué hace Shift Pro</span></div>
         <div class="intro-grid">
-          <h2>Tu auto merece<br>un cuidado que<br><em>se siente.</em></h2>
+          <h2>Cuidado especializado<br>en <em>cada cambio.</em></h2>
           <div class="intro-copy">
-            <p class="lead">Queremos que disfrutes tu vehículo sabiendo que está en buenas manos.</p>
-            <p>La experiencia de Shift Pro en transmisiones automáticas y diagnóstico electrónico es el respaldo de una nueva forma de cuidar: mantenimiento integral, atención personal y productos seleccionados para cada vehículo.</p>
-            <a class="underlined-link" href="#servicios">Conoce nuestro enfoque <span aria-hidden="true">↗</span></a>
+            <p class="lead">Shift Pro nació de la especialización en cuidado y reparación de transmisiones automáticas.</p>
+            <p>Realizamos mantenimiento preventivo, diagnóstico y reparaciones. El mantenimiento integral del vehículo y la atención a flotas complementan nuestra especialidad.</p>
+            <a class="underlined-link" href="#servicios">Explora nuestros servicios</a>
           </div>
         </div>
         <div class="intro-detail">
@@ -78,10 +132,10 @@
       </section>
 
       <section class="service-section section-pad" id="servicios">
-        <div class="section-kicker"><span>02</span><span class="kicker-rule"></span><span>Servicio integral</span></div>
+        <div class="section-kicker"><span>04</span><span class="kicker-rule"></span><span>Especialidad y servicios complementarios</span></div>
         <div class="service-heading">
-          <h2>Explora el cuidado<br>para cada <em>vehículo.</em></h2>
-          <p>Elige para quién buscas servicio. Te orientamos según el vehículo, su uso y sus necesidades.</p>
+          <h2>Cajas automáticas,<br>nuestro <em>origen.</em></h2>
+          <p>El mantenimiento integral del vehículo acompaña nuestra especialidad principal.</p>
         </div>
         <div class="service-explorer">
           <div class="service-explorer-intro">
@@ -92,21 +146,21 @@
             </div>
             <h3 class="audience-title" aria-live="polite">Cuidado pensado para tu auto.</h3>
             <p class="audience-description">Contanos qué vehículo tenés y qué necesitás. Te orientamos en mantenimiento o reparación.</p>
-            <a class="audience-link" href="#particulares">Ver atención para particulares <span aria-hidden="true">↗</span></a>
+            <a class="audience-link" href="#particulares">Ver atención para particulares</a>
             <span class="explorer-index">SHIFT PRO <b> / </b> SERVICIOS</span>
           </div>
           <div class="service-list" aria-label="Servicios disponibles">
-            <article class="service-row">
-              <button class="service-trigger" type="button" aria-expanded="false" aria-controls="service-detail-engine">
-                <span class="service-number">01</span><span class="service-title">Motor</span><span class="service-description">Service y mantenimiento</span><span class="service-arrow" aria-hidden="true">+</span>
-              </button>
-              <div class="service-detail" id="service-detail-engine" hidden>Service preventivo, lubricación y cuidados para acompañar el uso real de cada vehículo.</div>
-            </article>
-            <article class="service-row">
+            <article class="service-row is-specialty">
               <button class="service-trigger" type="button" aria-expanded="false" aria-controls="service-detail-transmission">
-                <span class="service-number">02</span><span class="service-title">Transmisión</span><span class="service-description">Automática · electrónica · mecatrónica</span><span class="service-arrow" aria-hidden="true">+</span>
+                <span class="service-number">01</span><span class="service-title">Transmisión</span><span class="service-description"><span class="service-specialty">ESPECIALIDAD</span> · Automática · electrónica · mecatrónica</span><span class="service-arrow" aria-hidden="true">+</span>
               </button>
               <div class="service-detail" id="service-detail-transmission" hidden>Mantenimiento preventivo, diagnóstico especializado y reparaciones puntuales en transmisiones automáticas.</div>
+            </article>
+            <article class="service-row">
+              <button class="service-trigger" type="button" aria-expanded="false" aria-controls="service-detail-engine">
+                <span class="service-number">02</span><span class="service-title">Motor</span><span class="service-description">Service y mantenimiento</span><span class="service-arrow" aria-hidden="true">+</span>
+              </button>
+              <div class="service-detail" id="service-detail-engine" hidden>Service preventivo, lubricación y cuidados para acompañar el uso real de cada vehículo.</div>
             </article>
             <article class="service-row">
               <button class="service-trigger" type="button" aria-expanded="false" aria-controls="service-detail-drivetrain">
@@ -140,26 +194,26 @@
             loading="lazy"
           >
           <div class="product-copy">
-            <div class="section-kicker section-kicker-light"><span>03</span><span class="kicker-rule"></span><span>Una elección que acompaña el cuidado</span></div>
+            <div class="section-kicker section-kicker-light"><span>05</span><span class="kicker-rule"></span><span>Una elección que acompaña el cuidado</span></div>
               <h2>Calidad en cada detalle.<br><em>Confianza en cada servicio.</em></h2>
               <p>Liqui Moly forma parte central de nuestra propuesta de mantenimiento. Elegimos los productos adecuados para cada vehículo y los aplicamos según sus necesidades de cuidado.</p>
-            <a class="underlined-link" href="#servicios">Conoce nuestros servicios <span aria-hidden="true">↗</span></a>
+            <a class="underlined-link" href="#servicios">Conoce nuestros servicios</a>
           </div>
         </div>
       </section>
 
       <section class="private-section" id="particulares">
         <div class="private-content">
-          <div class="section-kicker section-kicker-light"><span>04</span><span class="kicker-rule"></span><span>Para tu vehículo</span></div>
+          <div class="section-kicker section-kicker-light"><span>06</span><span class="kicker-rule"></span><span>Para tu vehículo</span></div>
           <p class="display-quote">Más que un service,<br>la tranquilidad de<br><em>cuidarlo bien.</em></p>
           <p class="private-copy">Cada vehículo tiene su historia y sus necesidades. Te ayudamos a cuidarlo con atención especializada, orientación clara y la experiencia que desarrollamos trabajando con transmisiones automáticas y electrónica. También realizamos reparaciones puntuales cuando hacen falta.</p>
-          <a class="button button-outline" href="https://wa.me/message/TBT3S5XPPHOJK1" target="_blank" rel="noreferrer">Consulta por tu vehículo <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="https://wa.me/message/TBT3S5XPPHOJK1" target="_blank" rel="noreferrer"><svg class="social-icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>Consulta por tu vehículo</a>
           <span class="private-index">ATENCIÓN PARTICULAR / 01</span>
         </div>
       </section>
 
       <section class="fleet-section section-pad" id="flotas">
-        <div class="section-kicker"><span>05</span><span class="kicker-rule"></span><span>Para empresas y flotas</span></div>
+        <div class="section-kicker"><span>07</span><span class="kicker-rule"></span><span>Para empresas y flotas</span></div>
         <div class="fleet-heading">
           <div>
             <p class="overline">CUIDADO A LA MEDIDA DE TU OPERACIÓN</p>
@@ -168,7 +222,7 @@
           <div class="fleet-aside">
             <p class="lead">No hay dos flotas iguales.</p>
             <p>El tipo de vehículo, su uso y las condiciones de trabajo definen cada plan. Adaptamos el mantenimiento a tu operación.</p>
-            <a class="underlined-link" href="https://wa.me/message/TBT3S5XPPHOJK1" target="_blank" rel="noreferrer">Conversemos sobre tu flota <span aria-hidden="true">↗</span></a>
+            <a class="underlined-link" href="https://wa.me/message/TBT3S5XPPHOJK1" target="_blank" rel="noreferrer"><svg class="social-icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>Conversemos sobre tu flota</a>
           </div>
         </div>
         <div class="fleet-types" aria-label="Tipos de flota">
@@ -177,32 +231,14 @@
           <article class="fleet-type"><span>03</span><h3>Institucional</h3><p>Flotas corporativas y diplomáticas.</p></article>
           <article class="fleet-type"><span>04</span><h3>Trabajo pesado</h3><p>Minería, transporte y operaciones exigentes.</p></article>
         </div>
-        <div class="fleet-bottom"><span>UNIDADES LIGERAS, MEDIANAS Y PESADAS</span><span>PLANIFICACIÓN SEGÚN CADA FLOTA <b>↗</b></span></div>
-      </section>
-
-      <section class="education-section section-pad">
-        <div class="education-visual">
-          <img
-            src="transmission-cutaway.png"
-            alt="Vista interna de una transmisión automática y sus componentes"
-            loading="lazy"
-            decoding="async"
-          >
-        </div>
-        <div class="education-content">
-          <div class="section-kicker"><span>06</span><span class="kicker-rule"></span><span>Conocimiento que cuida</span></div>
-          <p class="overline">NO TODAS LAS CAJAS SON IGUALES</p>
-          <h2>Entenderla es<br>parte de <em>cuidarla.</em></h2>
-          <p>CVT, doble embrague, automática convencional: cada transmisión tiene características y necesidades propias. Queremos ayudarte a conocer la tuya y entender cómo mantenerla.</p>
-          <a class="underlined-link" href="https://www.instagram.com/shiftpro_transmissions/" target="_blank" rel="noreferrer">Aprende con Shift Pro <span aria-hidden="true">↗</span></a>
-        </div>
+        <div class="fleet-bottom"><span>UNIDADES LIGERAS, MEDIANAS Y PESADAS</span><span>PLANIFICACIÓN SEGÚN CADA FLOTA</span></div>
       </section>
 
       <section class="contact-section section-pad">
         <p class="overline">SHIFT PRO · SALTA</p>
         <h2>El próximo paso<br>es <em>conversarlo.</em></h2>
         <p>Cuéntanos qué necesitas. Te ayudamos a encontrar el punto de partida.</p>
-        <a class="button button-dark" href="https://wa.me/message/TBT3S5XPPHOJK1" target="_blank" rel="noreferrer">Escríbenos por WhatsApp <span aria-hidden="true">↗</span></a>
+        <a class="button button-dark" href="https://wa.me/message/TBT3S5XPPHOJK1" target="_blank" rel="noreferrer"><svg class="social-icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>Escríbenos por WhatsApp</a>
       </section>
     </main>
 
@@ -212,8 +248,8 @@
       </a>
       <span class="footer-note">Cuidado de precisión. En cada movimiento.</span>
       <div class="footer-links">
-        <a href="https://www.instagram.com/shiftpro_transmissions/" target="_blank" rel="noreferrer">Instagram ↗</a>
-        <a href="https://wa.me/message/TBT3S5XPPHOJK1" target="_blank" rel="noreferrer">WhatsApp ↗</a>
+        <a href="https://www.instagram.com/shiftpro_transmissions/" target="_blank" rel="noreferrer"><svg class="social-icon" aria-hidden="true"><use href="#icon-instagram"></use></svg>Instagram</a>
+        <a href="https://wa.me/message/TBT3S5XPPHOJK1" target="_blank" rel="noreferrer"><svg class="social-icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>WhatsApp</a>
       </div>
       <span class="copyright">© SHIFT PRO</span>
     </footer>
